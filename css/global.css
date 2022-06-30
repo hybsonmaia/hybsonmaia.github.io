@@ -1,0 +1,48 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Fira Sans', Arial, sans-serif;
+}
+
+body::-webkit-scrollbar {
+  max-width: 18px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f5f7fa;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(#364fe5, #12248d);
+  border-radius: 4px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.subtitle {
+  font-size: 8rem;
+  line-height: 1;
+  text-transform: uppercase;
+  word-break: break-all;
+}

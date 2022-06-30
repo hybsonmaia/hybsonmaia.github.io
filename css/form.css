@@ -1,0 +1,148 @@
+.form {
+  background-color: #0b0c12;
+  padding: 120px;
+  position: relative;
+}
+
+.form::after {
+  content: '';
+  display: block;
+  background-image: url(../img/detalheFooterForm.svg);
+  background-repeat: no-repeat;
+  width: 51px;
+  height: 40px;
+  position: absolute;
+  z-index: 1;
+  left: 150px;
+  bottom: -20px;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 90px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.form-text {
+  font-size: 1.5rem;
+  color: #c0c5cc;
+  margin-bottom: 70px;
+}
+
+.form-text strong {
+  font-weight: bold;
+  color: #fff;
+}
+
+.form-subtitle {
+  display: block;
+  font-size: 0.875rem;
+  color: #7c8692;
+  margin-bottom: 30px;
+}
+
+.form-course {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.course-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #090909;
+  border-radius: 4px;
+  padding: 20px 30px 20px 40px;
+  gap: 10px;
+  border: 1px solid #090909;
+  position: relative;
+}
+
+.course-item::before {
+  content: '';
+  display: block;
+  background-image: url(../img/iconDetalheCaderno.svg);
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 23.6px;
+  position: absolute;
+  left: -1px;
+  top: 10px;
+}
+
+.course-item span {
+  font-size: 0.875rem;
+  color: #ced3d9;
+}
+
+.form-title {
+  max-width: 10ch;
+  flex: 1;
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.form-title strong {
+  color: #942dd2;
+}
+
+.form-tecno {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.course-item p {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  color: #ced3d9;
+}
+
+@media (max-width: 1000px) {
+  .form-container .subtitle {
+    font-size: 7.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .form-container {
+    grid-template-columns: 1fr;
+  }
+  .form-container .subtitle {
+    color: #fff;
+  }
+}
+
+@media (max-width: 850px) {
+  .form-container .subtitle {
+    font-size: 5rem;
+    color: #fff;
+  }
+}
+
+@media (max-width: 700px) {
+  .form-subtitle {
+    text-align: center;
+  }
+  .form-course {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .form {
+    padding: 60px;
+  }
+
+  .form-container .subtitle {
+    font-size: 2.1rem;
+    text-align: center;
+  }
+
+  .form-text {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+}
